@@ -51,18 +51,24 @@ Parallel语言中一切都可以是“变量”，但是Parallel不提供保存�
 
 void w(float t)
  t:前一个字符延迟t秒
+ 
 void speaker(string name)
 name:改变游戏内对话框里面的名字
+
 void branch(parms string[] choise)
 在屏幕上显示多个选项供玩家选择
 choise可选选项,多参数
+
 void print(string s)
 s:要log的内容
+
 void load(string path)
 加载并执行一个脚本
 path:打开的脚本的相对路径
+
 void messagebox(string n)
 在屏幕中央显示一个消息框
+
 void character(string path,string side)
 设置角色在画面中的进场/退场,以及位置
 Path:角色的文件名字 如果为””空字符串则表示退场
