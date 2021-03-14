@@ -1,0 +1,5 @@
+{speaker("我")}不行,这种事情我怎么能做呢
+{speaker("")}过了一会...
+{character("hoshi_school_smile","Mid")}哈哈,你通过了我的测试
+作为奖励,就让你和我啪啪啪吧
+{messagebox("事后干了个爽")}{switchBGM("Victory")}

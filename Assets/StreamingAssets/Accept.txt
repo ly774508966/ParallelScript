@@ -1,0 +1,5 @@
+{background("Bathroom")}{character("hoshi_swim_embarrassed1","Mid")}{speaker("末末")}拉~拉~拉~
+{shake(1)}嗯?谁在那里?
+{shake(2)}啊~~~,流氓啊
+看我榨干你个臭猪猪
+{messagebox("结局:卒")}{switchBGM("Defeat")}
