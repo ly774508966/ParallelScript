@@ -48,7 +48,46 @@ then 执行的语句 else 执行的语句}
 5. 多文件
 使用load(path)函数加载一个脚本并且运行 
 
-## 四.目前提供的API函数
+## 四.支持的html标签
+
+[官方文档](http://digitalnativestudios.com/textmeshpro/docs/rich-text/)
+
+|Tags	| Summary|
+|----|----|
+|align |	文字对齐方式
+|alpha, color |	颜色和透明度
+|b, i |	粗体和斜体
+|cspace |	Character spacing.
+|font |	字体
+|indent	| Indentation.
+|line-height |	行高
+|line-indent |	Line indentation.
+|link |	文本元数据
+|lowercase, uppercase, smallcaps |	Capitalization.
+|margin |	Text margins.
+|mark|	Marking text.
+|mspace|	Monospacing.
+|noparse|	Prevent parsing.
+|nobr|	Non-breaking spaces.
+|page|	Page break.
+|pos|	Horizontal caret position.
+|size|	字体大小
+|space|	Horizontal space.
+|sprite|	插入图片
+|s, u	|Strikethrough and underline.
+|style|	自定义styles.
+|sub, sup	|Subscript and superscript.
+|voffset	|Baseline offset.
+|width	|文字宽度
+
+
+目前支持的文字特效:
+```xml
+<link="Wave"></link> //文字摇摆
+<link="Rainbow"></link> //文字颜色彩虹
+```
+
+## 五.目前提供的API函数
 >void w(float t)
  t:前一个字符延迟t秒
 
@@ -94,6 +133,6 @@ Name:要切换的BGM的名字 如何为””空字符则代表停止当前BGM
 摇晃屏幕
 Intensity:摇晃强度
  
-## 添加自己的Lua函数
+## 六.添加自己的Lua函数
 
 利用LuaCenter里的Register函数可以注册
