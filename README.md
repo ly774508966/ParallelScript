@@ -78,6 +78,8 @@ Side:在那个位置 为枚举类型 可以为”Right” “Left” “Mid”
 >void background(string path)
 切换背景
 path:背景的名称
+目前可用背景:
+[](https://github.com/EnderHorror/ParallelScript/blob/main/BG.png)
 
 >void switchBGM(string name)
 平滑切换BGM
