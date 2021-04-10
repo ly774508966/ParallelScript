@@ -63,7 +63,7 @@ public class NetworkTime : MonoSingleton<NetworkTime>
             var milliseconds = (intPart * 1000) + ((fractPart * 1000) / 0x100000000L);
             var networkDataTime = (new DateTime(1900, 1, 1, 0, 0, 0, DateTimeKind.Local)).AddMilliseconds((long)milliseconds);
 
-            TimeZone localzone = TimeZone.CurrentTimeZone;
+            var localzone = TimeZoneInfo.Local;
             TimeSpan currentOffset = localzone.GetUtcOffset(networkDataTime);
             CurrentTime = networkDataTime + currentOffset;
             Connect = true;
@@ -72,7 +72,7 @@ public class NetworkTime : MonoSingleton<NetworkTime>
         }
         catch
         {
-            TimeZone localzone_ = TimeZone.CurrentTimeZone;
+            var localzone_ = TimeZoneInfo.Local;
             TimeSpan currentOffset_ = localzone_.GetUtcOffset(DateTime.UtcNow);
             CurrentTime = DateTime.UtcNow + currentOffset_;
             Connect = false;

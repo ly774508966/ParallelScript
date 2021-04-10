@@ -8,19 +8,23 @@ using NLua;
 using DG.Tweening;
 using System.Reflection;
 using System.IO;
+using TMPro;
 
 public class Dialog : MonoSingleton<Dialog>
 {
     public float waitTime = 0.2f;
-    private Text dialogBox;
+    private TMP_Text tmpText;
     private Text nameBox;
     private string[] buffer;
+    private LinkTag linkTag;
     
     private int currentLine =0;
     private bool canNext = true;
     public bool isPause = false;
     private float varTime = 0.2f;
     private SelectPannel select;
+    
+    private string NullTextHead = "<link=\"Fuck\"></link>";
 
     private void Awake()
     {
@@ -29,8 +33,9 @@ public class Dialog : MonoSingleton<Dialog>
 
     void Start()
     {
-        dialogBox = transform.GetChild(0).Find("Dialog").GetComponent<Text>();
+        tmpText = transform.GetChild(0).Find("Dialog").GetComponent<TMP_Text>();
         nameBox = transform.GetChild(0).Find("Name").GetComponent<Text>();
+        linkTag = GetComponentInChildren<LinkTag>();
 
 
         LuaEventCenter.Instance.RegisterFunction("w", "WaitForWhile", this);
@@ -68,20 +73,27 @@ public class Dialog : MonoSingleton<Dialog>
         canNext = false;
         List<Mark> mark;
         string text = WordsAnalyze.RemoveKeyWords(Rawtext, out mark);
-        dialogBox.text = string.Empty;
+        
+        //更新文字信息
+        tmpText.textInfo.ClearLinkData();
+        tmpText.SetText(text);
+        tmpText.ForceMeshUpdate();
+        linkTag.ForceUpdate();
+        
+        
         if (text.Length != 0)
         {
-            for (int i = 0; i < text.Length; i++)
+            for (int i = 0; i < tmpText.textInfo.characterCount; i++)
             {
-                dialogBox.text += text[i];
                 foreach (var job in mark)
                 {
                     if (job.Key == i)
                     {
                         LuaEventCenter.Instance.DoString(job.Value);
                     }
+                    
                 }
-
+                tmpText.maxVisibleCharacters = i;
                 yield return new WaitForSeconds(varTime);
 
                 varTime = waitTime;
@@ -96,6 +108,8 @@ public class Dialog : MonoSingleton<Dialog>
         }
         canNext = true;
     }
+    
+    
     /// <summary>
     /// 文字等待
     /// </summary>
