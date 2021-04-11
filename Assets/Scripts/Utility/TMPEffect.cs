@@ -21,6 +21,7 @@ public interface ITextEffect
 /// <summary>
 /// TMP文字自定义特效
 /// </summary>
+[RequireComponent(typeof(TMP_Text))]
 public class TMPEffect : MonoBehaviour
 {
     private TMP_Text tmpText;

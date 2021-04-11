@@ -56,6 +56,7 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.1.4/Scripts/Runtime/TMPro_Private.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TextEffects/Wobble.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MessageBox.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/LuaTest.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -66,14 +67,16 @@
         <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.1.4/Scripts/Runtime/TMP_Text.cs" />
         <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.1.4/Scripts/Runtime/TMP_TextInfo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/NetWorkTime.cs" />
-        <option value="$PROJECT_DIR$/Assets/Character.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/LuaEventCenter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/LinkTag.cs" />
-        <option value="$PROJECT_DIR$/Assets/Dialog.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/TMP_EffectFuncAttribute.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TextEffects/Wobble.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/TMPEffect.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TextEffects/Rainbow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Character.cs" />
+        <option value="$PROJECT_DIR$/Assets/BackGroundManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/LuaEventCenter.cs" />
+        <option value="$PROJECT_DIR$/Assets/LuaTest.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/TMPEffect.cs" />
+        <option value="$PROJECT_DIR$/Assets/Dialog.cs" />
       </list>
     </option>
   </component>
@@ -116,7 +119,7 @@
       <workItem from="1617800230297" duration="10070000" />
       <workItem from="1617857667945" duration="13187000" />
       <workItem from="1618045607375" duration="8522000" />
-      <workItem from="1618142785544" duration="6740000" />
+      <workItem from="1618142785544" duration="8579000" />
     </task>
     <servers />
   </component>

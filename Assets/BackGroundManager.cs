@@ -9,7 +9,7 @@ public class BackGroundManager : MonoBehaviour
     public Sprite[] backGrounds;
 
 
-    private SpriteRenderer renderer;
+    private new SpriteRenderer renderer;
     void Start()
     {
         LuaEventCenter.Instance.RegisterFunction("background", "SwitchBackGround", this);

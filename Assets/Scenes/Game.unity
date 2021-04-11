@@ -686,7 +686,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 0.05
-  isPause: 0
 --- !u!114 &647898698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1111,38 +1110,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1253950849}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15c71b0f8f91471e87cdf4a4fe40c754, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ad6976b15444d71bc93f7dcfed303c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rainbow:
-    serializedVersion: 2
-    key0: {r: 0, g: 0.93673205, b: 1, a: 1}
-    key1: {r: 0.4009434, g: 1, b: 0.8205913, a: 1}
-    key2: {r: 0.04460168, g: 1, b: 0, a: 0}
-    key3: {r: 1, g: 0.8564267, b: 0, a: 0}
-    key4: {r: 1, g: 0, b: 0, a: 0}
-    key5: {r: 1, g: 0, b: 0.5719805, a: 0}
-    key6: {r: 0.99034977, g: 0, b: 1, a: 0}
-    key7: {r: 0.052918434, g: 0, b: 1, a: 0}
-    ctime0: 0
-    ctime1: 10023
-    ctime2: 19468
-    ctime3: 29105
-    ctime4: 38165
-    ctime5: 45104
-    ctime6: 52621
-    ctime7: 65535
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 8
-    m_NumAlphaKeys: 2
 --- !u!1 &1466713683
 GameObject:
   m_ObjectHideFlags: 0
@@ -1231,6 +1201,7 @@ GameObject:
   - component: {fileID: 1687258584}
   - component: {fileID: 1687258582}
   - component: {fileID: 1687258583}
+  - component: {fileID: 1687258586}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1315,6 +1286,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1687258586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687258581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b87618999ee54824082f8d333f187c70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2008349518
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,7 +16,7 @@ public class Character : MonoBehaviour
     public string ownner;
     public Side side;
 
-    private SpriteRenderer renderer;
+    private new SpriteRenderer renderer;
     void Awake()
     {
         renderer = GetComponent<SpriteRenderer>();

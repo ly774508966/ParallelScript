@@ -12,20 +12,18 @@ using TMPro;
 
 public class Dialog : MonoSingleton<Dialog>
 {
-    public float waitTime = 0.2f;
+    public bool isPause { get; set; } = false;
+    
+    [SerializeField]private float waitTime = 0.2f;
+    
     private TMP_Text tmpText;
     private Text nameBox;
     private string[] buffer;
     private TMPEffect tmpEffect;
-    
     private int currentLine =0;
     private bool canNext = true;
-    public bool isPause = false;
-    private float varTime = 0.2f;
     private SelectPannel select;
     
-    private string NullTextHead = "<link=\"Fuck\"></link>";
-
     private void Awake()
     {
         Instance = this;
@@ -36,22 +34,15 @@ public class Dialog : MonoSingleton<Dialog>
         tmpText = transform.GetChild(0).Find("Dialog").GetComponent<TMP_Text>();
         nameBox = transform.GetChild(0).Find("Name").GetComponent<Text>();
         tmpEffect = GetComponentInChildren<TMPEffect>();
-
-
-        LuaEventCenter.Instance.RegisterFunction("w", "WaitForWhile", this);
+        
+        
         LuaEventCenter.Instance.RegisterFunction("speaker", "SetSpeaker", this);
         LuaEventCenter.Instance.RegisterFunction("branch", "Branch", this);
         LuaEventCenter.Instance.RegisterFunction("load", "LoadScript", this);
-        
-        FileStream fileStream = new FileStream(Application.streamingAssetsPath+@"\" + "Start.txt", FileMode.Open, FileAccess.Read);
-        TextReader textReader = new StreamReader(fileStream);
-        buffer = WordsAnalyze.ClipLine(textReader.ReadToEnd());
-        
-        StartCoroutine(PlayText(buffer[currentLine]));
-        currentLine++;
+
+        LoadScript("Start.txt");
     }
-
-
+    
 
     // Update is called once per frame
     void Update()
@@ -78,7 +69,6 @@ public class Dialog : MonoSingleton<Dialog>
         tmpText.textInfo.linkCount = 0;
         tmpText.textInfo.linkInfo = new TMP_LinkInfo[0];
         tmpText.SetText(text);
-        tmpText.ForceMeshUpdate();
         tmpEffect.ForceUpdate();
         
         
@@ -86,18 +76,16 @@ public class Dialog : MonoSingleton<Dialog>
         {
             for (int i = 0; i < tmpText.textInfo.characterCount; i++)
             {
+                LuaEventCenter.Instance.DoString($"w={waitTime}");
                 foreach (var job in mark)
                 {
                     if (job.Key == i)
                     {
                         LuaEventCenter.Instance.DoString(job.Value);
                     }
-                    
                 }
                 tmpText.maxVisibleCharacters = i;
-                yield return new WaitForSeconds(varTime);
-
-                varTime = waitTime;
+                yield return new WaitForSeconds((float)LuaEventCenter.Instance.GetNumber("w"));
             }
         }
         else
@@ -110,15 +98,6 @@ public class Dialog : MonoSingleton<Dialog>
         canNext = true;
     }
     
-    
-    /// <summary>
-    /// 文字等待
-    /// </summary>
-    /// <param name="time">时间</param>
-    public void WaitForWhile(float time)
-    {
-        varTime = time;
-    }
     /// <summary>
     /// 设置发言人
     /// </summary>

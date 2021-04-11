@@ -35,6 +35,11 @@ public class LuaEventCenter : Singleton<LuaEventCenter>
     {
         lua.DoString(code);
     }
+
+    public double GetNumber(string fullPath)
+    {
+        return lua.GetNumber(fullPath);
+    }
     
     /// <summary>
     /// 作为Lua调试使用

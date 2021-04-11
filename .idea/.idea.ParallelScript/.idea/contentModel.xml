@@ -49,6 +49,7 @@
           <e p="readme_DOTweenPro.txt" t="Include" />
         </e>
         <e p="Dialog.cs" t="Include" />
+        <e p="LuaTest.cs" t="Include" />
         <e p="MessageBox.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="DebugMessage.cs" t="Include" />
