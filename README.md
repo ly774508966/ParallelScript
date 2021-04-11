@@ -57,28 +57,28 @@ then 执行的语句 else 执行的语句}
 |align |	文字对齐方式
 |alpha, color |	颜色和透明度
 |b, i |	粗体和斜体
-|cspace |	Character spacing.
+|cspace |	文字行间距
 |font |	字体
-|indent	| Indentation.
+|indent	| 缩进
 |line-height |	行高
-|line-indent |	Line indentation.
+|line-indent |	行缩进
 |link |	文本元数据
-|lowercase, uppercase, smallcaps |	Capitalization.
-|margin |	Text margins.
-|mark|	Marking text.
-|mspace|	Monospacing.
-|noparse|	Prevent parsing.
-|nobr|	Non-breaking spaces.
+|lowercase, uppercase, smallcaps |	字母大小写化
+|margin |	盒子模型Margin
+|mark|	标记文字
+|mspace|	单个字符间距
+|noparse|	不转义
+|nobr|	文字不会被Warpping
 |page|	Page break.
-|pos|	Horizontal caret position.
+|pos|	水平位置
 |size|	字体大小
-|space|	Horizontal space.
+|space|	空格长度
 |sprite|	插入图片
-|s, u	|Strikethrough and underline.
+|s, u	| 划掉线和下划线
 |style|	自定义styles.
-|sub, sup	|Subscript and superscript.
-|voffset	|Baseline offset.
-|width	|文字宽度
+|sub, sup	|S上标和下标
+|voffset	| 高度偏移
+|width	|区域文字宽度
 
 
 目前支持的文字特效:
