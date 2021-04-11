@@ -1,10 +1,10 @@
 {character("hoshi_school_smile","Mid")}{speaker("??")}你好啊!
-{switchBGM("Menu")}{speaker("末末")}我叫<color=#66ccff>末末</color>,是这个游戏的<link="Wave">主角</link>.
+{switchBGM("Menu")}{speaker("末末")}我叫<color=#66ccff>末末</color>,是这个游戏的<link="Wobble">主角</link>.
 {speaker("我")}{shake(1)}啊?主机是什么鬼?
 {speaker("末末")}就是这个游戏的<link="Rainbow">主角</link>呀
 我会告诉你发生了什么的.
 等等,我先去洗个澡待会再和你说.
 {character("","Mid")}
-{speaker("内心")}这是个<link="Rainbow">游戏</link>吗?也就是可以<link="Wave">做</link><link="Rainbow">什么都可以?</link>
+{speaker("内心")}这是个<link="Rainbow">游戏</link>吗?也就是可以<link="Wobble">做</link><link="Rainbow">什么都可以?</link>
 {branch("冲","就这?")}
 {if(choise=="冲") then load("Accept.txt") else load("Refuse.txt") end }

@@ -29,6 +29,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TextEffects/Rainbow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Unity/Hub/Editor/2019.4.21f1c1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Layout/CanvasScaler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.1.4/Scripts/Runtime/TextMeshProUGUI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CutomeLink.cs" root0="FORCE_HIGHLIGHTING" />
@@ -36,6 +37,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/CharacterManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EAE584CE-26BC-4022-9C1B-1AA476BFA589/ee/e7ff0774/String.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/WordsAnalyze.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/TMPEffect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EAE584CE-26BC-4022-9C1B-1AA476BFA589/12/7e8b62ca/KeyValuePair`2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.1.4/Scripts/Runtime/TMP_TextProcessingStack.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/BGMManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -51,8 +53,8 @@
     <setting file="file://C:/Program Files/Unity/Hub/Editor/2019.4.21f1c1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Layout/HorizontalOrVerticalLayoutGroup.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/BackGroundManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.1.4/Scripts/Runtime/TMPro_MeshUtilities.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/LinkTag.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.1.4/Scripts/Runtime/TMPro_Private.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TextEffects/Wobble.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MessageBox.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -61,11 +63,17 @@
         <option value="$PROJECT_DIR$/Assets/TMPSquiggleTag.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WordsAnalyze.cs" />
         <option value="$PROJECT_DIR$/Assets/CutomeLink.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/LinkTag.cs" />
         <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.1.4/Scripts/Runtime/TMP_Text.cs" />
         <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.1.4/Scripts/Runtime/TMP_TextInfo.cs" />
-        <option value="$PROJECT_DIR$/Assets/Dialog.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/NetWorkTime.cs" />
+        <option value="$PROJECT_DIR$/Assets/Character.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/LuaEventCenter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/LinkTag.cs" />
+        <option value="$PROJECT_DIR$/Assets/Dialog.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/TMP_EffectFuncAttribute.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TextEffects/Wobble.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/TMPEffect.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TextEffects/Rainbow.cs" />
       </list>
     </option>
   </component>
@@ -88,10 +96,10 @@
       <option name="pid" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="1920">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="1920" />
+      <option name="pid" />
       <method v="2" />
     </configuration>
   </component>
@@ -108,6 +116,7 @@
       <workItem from="1617800230297" duration="10070000" />
       <workItem from="1617857667945" duration="13187000" />
       <workItem from="1618045607375" duration="8522000" />
+      <workItem from="1618142785544" duration="6740000" />
     </task>
     <servers />
   </component>

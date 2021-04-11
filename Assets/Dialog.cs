@@ -16,7 +16,7 @@ public class Dialog : MonoSingleton<Dialog>
     private TMP_Text tmpText;
     private Text nameBox;
     private string[] buffer;
-    private LinkTag linkTag;
+    private TMPEffect tmpEffect;
     
     private int currentLine =0;
     private bool canNext = true;
@@ -35,7 +35,7 @@ public class Dialog : MonoSingleton<Dialog>
     {
         tmpText = transform.GetChild(0).Find("Dialog").GetComponent<TMP_Text>();
         nameBox = transform.GetChild(0).Find("Name").GetComponent<Text>();
-        linkTag = GetComponentInChildren<LinkTag>();
+        tmpEffect = GetComponentInChildren<TMPEffect>();
 
 
         LuaEventCenter.Instance.RegisterFunction("w", "WaitForWhile", this);
@@ -75,10 +75,11 @@ public class Dialog : MonoSingleton<Dialog>
         string text = WordsAnalyze.RemoveKeyWords(Rawtext, out mark);
         
         //更新文字信息
-        tmpText.textInfo.ClearLinkData();
+        tmpText.textInfo.linkCount = 0;
+        tmpText.textInfo.linkInfo = new TMP_LinkInfo[0];
         tmpText.SetText(text);
         tmpText.ForceMeshUpdate();
-        linkTag.ForceUpdate();
+        tmpEffect.ForceUpdate();
         
         
         if (text.Length != 0)

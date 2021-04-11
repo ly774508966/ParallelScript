@@ -24,7 +24,6 @@ public class Character : MonoBehaviour
 
     private void Start()
     {
-        //Dialog.instance.RegisterFunction(new Action(Test).Method.Name,this);
     }
 
     // Update is called once per frame
