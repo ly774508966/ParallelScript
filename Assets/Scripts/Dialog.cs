@@ -58,7 +58,9 @@ public class Dialog : MonoSingleton<Dialog>,IPause
     IEnumerator PlayText(string Rawtext)
     {
         canNext = false;
+        
         string text = TokenAnalyze.RemoveKeyWords(Rawtext, out var mark);
+        
         tmpEffect.SetText(text);//更新文字信息
         float waitTime = textAnimateTime/ (tmpText.textInfo.characterCount+1);//计算单个文字出现时间
 
@@ -72,10 +74,13 @@ public class Dialog : MonoSingleton<Dialog>,IPause
                     if (job.Key == i)
                     {
                         LuaEventCenter.Instance.DoString(job.Value);
+                        
                     }
                 }
-                tmpText.maxVisibleCharacters = i;
                 yield return new WaitForSeconds((float)LuaEventCenter.Instance.GetNumber("w"));
+                
+                tmpText.maxVisibleCharacters = i;
+                
             }
         }
         else

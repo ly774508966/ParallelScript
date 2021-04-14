@@ -1,5 +1,5 @@
 {character("hoshi_school_smile","Mid")}{speaker("??")}你好啊!
-{speaker("系统")}<link="Rainbow">彩虹文字</link>{w=1}非{w=1}常<color=#66ccff>酷炫</color>
+{speaker("系统")}<link="Rainbow">彩虹文字</link>{w=1.0}非{w=1.0}常<color=#66ccff>酷炫</color>
 {switchBGM("Menu")}{speaker("末末")}我叫<color=#66ccff>末末</color>,是这个游戏的<link="Wobble">主角</link>.
 {speaker("我")}{shake(1)}啊?主机是什么鬼?
 {speaker("末末")}就是这个游戏的<link="Rainbow">主角</link>呀
