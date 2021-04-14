@@ -28,7 +28,7 @@ public class TMPEffect : MonoBehaviour
     private readonly Dictionary<string, List<TMP_LinkInfo>> linkDir = new Dictionary<string, List<TMP_LinkInfo>>();
     private Dictionary<string,ITextEffect> effectsDir = new Dictionary<string,ITextEffect>();
     
-    private void Start()
+    private void Awake()
     {
         tmpText = GetComponent<TMP_Text>();
         GenerateEffects();
@@ -72,13 +72,21 @@ public class TMPEffect : MonoBehaviour
                 }
             }
         }
-        foreach (var items in linkDir)
-        {
-            foreach (var item in items.Value)
-            {
-                print($"{items.Key} {item.GetLinkText()}");
-            }
-        }
+        // foreach (var items in linkDir)
+        // {
+        //     foreach (var item in items.Value)
+        //     {
+        //         print($"{items.Key} {item.GetLinkText()}");
+        //     }
+        // }
+    }
+
+    public void SetText(string text)
+    {
+        tmpText.textInfo.linkCount = 0;
+        tmpText.textInfo.linkInfo = new TMP_LinkInfo[0];
+        tmpText.SetText(text);
+        ForceUpdate();
     }
     private void Update()
     {

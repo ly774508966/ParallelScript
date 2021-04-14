@@ -19,12 +19,12 @@ public class LuaEventCenter : Singleton<LuaEventCenter>
     /// <summary>
     /// 注册Lua里可以调用的函数
     /// </summary>
-    /// <param name="inLuaName">lua里的函数名</param>
-    /// <param name="name">C#里的函数名</param>
+    /// <param name="luaFuncName">lua里的函数名</param>
+    /// <param name="CSname">C#里的函数名</param>
     /// <param name="target">函数目标对象</param>
-    public void RegisterFunction(string inLuaName,string name,object target)
+    public void RegisterFunction(string luaFuncName,string CSname,object target)
     {
-        if(!registerList.Contains(inLuaName)) lua.RegisterFunction(inLuaName, target, target.GetType().GetMethod(name));
+        if(!registerList.Contains(luaFuncName)) lua.RegisterFunction(luaFuncName, target, target.GetType().GetMethod(CSname));
     }
     
     /// <summary>

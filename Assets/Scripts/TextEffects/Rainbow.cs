@@ -8,7 +8,7 @@ public class Rainbow : ITextEffect
     //渐变色需要自己想办法设置
     public Rainbow()
     {
-        
+        rainbow = Resources.Load<EffectPreset>("EffectPreset").textGradinet;
     }
     
     public void HandleEffect(TMP_LinkInfo info, Mesh src)
