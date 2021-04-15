@@ -30,6 +30,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TextEffects/Rainbow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.1.4/Scripts/Runtime/TextMeshPro.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Unity/Hub/Editor/2019.4.21f1c1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Layout/CanvasScaler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.1.4/Scripts/Runtime/TextMeshProUGUI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/IPause.cs" root0="FORCE_HIGHLIGHTING" />
@@ -124,7 +125,8 @@
       <workItem from="1617857667945" duration="13187000" />
       <workItem from="1618045607375" duration="8522000" />
       <workItem from="1618142785544" duration="8579000" />
-      <workItem from="1618394758146" duration="10094000" />
+      <workItem from="1618394758146" duration="10192000" />
+      <workItem from="1618455272686" duration="4119000" />
     </task>
     <servers />
   </component>
@@ -229,5 +231,24 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="226" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/3840.0.1920.1040@0.0.1920.1040" timestamp="1618399616663" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.1.4/Scripts/Runtime/TMPro_UGUI_Private.cs</url>
+          <line>1869</line>
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.1.4/Scripts/Runtime/TMPro_UGUI_Private.cs" initialLine="1869">
+            <startOffsets>
+              <option value="84088" />
+            </startOffsets>
+            <endOffsets>
+              <option value="84183" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
