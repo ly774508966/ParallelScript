@@ -120,22 +120,18 @@ path:打开的脚本的相对路径
 设置角色在画面中的进场/退场,以及位置
 Path:角色的文件名字 如果为””空字符串则表示退场
 Side:在那个位置 为枚举类型 可以为”Right” “Left” “Mid”
-目前可以选择的character
-![BG](https://enderhorror.github.io/enderhorror.githubio/Chareaters.png)
 
 >void background(string path)
 切换背景
 path:背景的名称
 目前可用背景
 
-![BG](https://enderhorror.github.io/enderhorror.githubio/BG.png)
 
 >void switchBGM(string name)
 平滑切换BGM
 Name:要切换的BGM的名字 如何为””空字符则代表停止当前BGM
 
 目前可用选择的BGM
-![BG](https://enderhorror.github.io/enderhorror.githubio/BGM.png)
 
 >void shake(float intensity)
 摇晃屏幕
