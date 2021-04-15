@@ -63,6 +63,8 @@ public class Dialog : MonoSingleton<Dialog>,IPause
 
 
         #region 文字去Tag
+
+        tmpText.maxVisibleCharacters = 0;
         tmpText.text = Rawtext;
         tmpText.ForceMeshUpdate();
         StringBuilder unTagText = new StringBuilder();
@@ -74,7 +76,8 @@ public class Dialog : MonoSingleton<Dialog>,IPause
 
         
         string text = TokenAnalyze.RemoveKeyWords(unTagText.ToString(), out var mark);
-        tmpEffect.SetText(text);//更新文字信息
+        var renterText = TokenAnalyze.RemoveKeyWords(Rawtext, out var __);
+        tmpEffect.SetText(renterText);//更新文字信息
         
 
         float waitTime = textAnimateTime/ (tmpText.textInfo.characterCount+1);//计算单个文字出现时间
@@ -88,13 +91,14 @@ public class Dialog : MonoSingleton<Dialog>,IPause
                 {
                     if (job.Key == i)
                     {
+                        print($"{job.Key}  {job.Value}");
                         LuaEventCenter.Instance.DoString(job.Value);
                         
                     }
                 }
                 yield return new WaitForSeconds((float)LuaEventCenter.Instance.GetNumber("w"));
-                
-                tmpText.maxVisibleCharacters = i;
+                //+1是因为第一个字符应该显示
+                tmpText.maxVisibleCharacters = i+1;
                 
             }
         }
