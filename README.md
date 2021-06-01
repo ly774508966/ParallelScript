@@ -1,6 +1,6 @@
 # Parallel Script使用指南
 
-![Image](https://enderhorror.github.io/enderhorror.githubio/Demo.gif)
+![Image](https://github.com/EnderHorror/ParallelScript/blob/main/demo.gif)
 
 ```R
 {speaker("系统")}<link="Rainbow">彩虹文字</link>{w=1}非{w=1}常<color=#66ccff>酷炫</color>
