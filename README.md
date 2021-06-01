@@ -3,8 +3,8 @@
 ![Image](https://github.com/EnderHorror/ParallelScript/blob/main/demo.gif)
 
 ```R
-{speaker("系统")}<link="Rainbow">彩虹文字</link>{w=1}非{w=1}常<color=#66ccff>酷炫</color>
-把名字设为"系统"               标记为彩虹特效     等待1s                标记颜色
+{speaker("服务员")}<link="Rainbow">{w(1)}Wow!{w(1)}</link>I <color=ff0000>love</color>card games!
+名字标题设为"服务员"  标记为彩虹特效  等待1s                      标记颜色
 ```
 
 ## 一.前言
