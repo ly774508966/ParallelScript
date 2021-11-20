@@ -29,31 +29,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TextEffects/Rainbow.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.1.4/Scripts/Runtime/TextMeshPro.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://C:/Program Files/Unity/Hub/Editor/2019.4.21f1c1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Layout/CanvasScaler.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.1.4/Scripts/Runtime/TextMeshProUGUI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/IPause.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Dialog.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.1.4/Scripts/Runtime/TMP_MeshInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/NetWorkTime.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E81851A0-DC73-4A79-AFA9-F5B7273162BE/2d/51e021fb/Int32.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.1.4/Scripts/Runtime/TMP_UpdateManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EAE584CE-26BC-4022-9C1B-1AA476BFA589/ee/e7ff0774/String.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.1.4/Scripts/Runtime/TMP_InputField.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TokenAnalyze.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/TMPEffect.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EAE584CE-26BC-4022-9C1B-1AA476BFA589/12/7e8b62ca/KeyValuePair`2.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.1.4/Scripts/Runtime/TMP_TextProcessingStack.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/LuaEventCenter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.1.4/Scripts/Runtime/TMP_TextInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/TokenAnalyze.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TextEffects/Rainbow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EffectPreset.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/623DD1C5-ED6E-43BC-8659-6AF9203BEC21/3a/7b27e858/DOTweenComponent.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.1.4/Scripts/Runtime/TMP_Text.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.1.4/Scripts/Runtime/TMPro_UGUI_Private.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://C:/Program Files/Unity/Hub/Editor/2019.4.21f1c1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Layout/HorizontalOrVerticalLayoutGroup.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.1.4/Scripts/Runtime/TMPro_MeshUtilities.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.1.4/Scripts/Runtime/TMPro_Private.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Dialog.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/LuaEventCenter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TextEffects/Wobble.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -91,8 +74,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.391987" />
-    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.29994586" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.39198112" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="XThreadsFramesViewSplitterKey" value="0.44674966" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys_rider" />
@@ -102,15 +85,24 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="7260">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="7260" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
       <method v="2" />
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -127,12 +119,14 @@
       <workItem from="1618142785544" duration="8579000" />
       <workItem from="1618394758146" duration="10192000" />
       <workItem from="1618455272686" duration="4550000" />
+      <workItem from="1637394305692" duration="5094000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
@@ -150,103 +144,27 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
-  <component name="WindowStateProjectService">
-    <state width="1878" height="146" key="GridCell.Tab.0.bottom" timestamp="1618057228087">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1878" height="146" key="GridCell.Tab.0.bottom/0.0.1920.1040/3840.0.1920.1040@0.0.1920.1040" timestamp="1618057228087" />
-    <state width="1878" height="146" key="GridCell.Tab.0.center" timestamp="1618057228087">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1878" height="146" key="GridCell.Tab.0.center/0.0.1920.1040/3840.0.1920.1040@0.0.1920.1040" timestamp="1618057228087" />
-    <state width="1878" height="146" key="GridCell.Tab.0.left" timestamp="1618057228087">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1878" height="146" key="GridCell.Tab.0.left/0.0.1920.1040/3840.0.1920.1040@0.0.1920.1040" timestamp="1618057228087" />
-    <state width="1878" height="146" key="GridCell.Tab.0.right" timestamp="1618057228087">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1878" height="146" key="GridCell.Tab.0.right/0.0.1920.1040/3840.0.1920.1040@0.0.1920.1040" timestamp="1618057228087" />
-    <state width="1878" height="146" key="GridCell.Tab.1.bottom" timestamp="1618057228087">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1878" height="146" key="GridCell.Tab.1.bottom/0.0.1920.1040/3840.0.1920.1040@0.0.1920.1040" timestamp="1618057228087" />
-    <state width="1878" height="146" key="GridCell.Tab.1.center" timestamp="1618057228087">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1878" height="146" key="GridCell.Tab.1.center/0.0.1920.1040/3840.0.1920.1040@0.0.1920.1040" timestamp="1618057228087" />
-    <state width="1878" height="146" key="GridCell.Tab.1.left" timestamp="1618057228087">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1878" height="146" key="GridCell.Tab.1.left/0.0.1920.1040/3840.0.1920.1040@0.0.1920.1040" timestamp="1618057228087" />
-    <state width="1878" height="146" key="GridCell.Tab.1.right" timestamp="1618057228087">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1878" height="146" key="GridCell.Tab.1.right/0.0.1920.1040/3840.0.1920.1040@0.0.1920.1040" timestamp="1618057228087" />
-    <state width="1878" height="146" key="GridCell.Tab.2.bottom" timestamp="1618057228087">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1878" height="146" key="GridCell.Tab.2.bottom/0.0.1920.1040/3840.0.1920.1040@0.0.1920.1040" timestamp="1618057228087" />
-    <state width="1878" height="146" key="GridCell.Tab.2.center" timestamp="1618057228087">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1878" height="146" key="GridCell.Tab.2.center/0.0.1920.1040/3840.0.1920.1040@0.0.1920.1040" timestamp="1618057228087" />
-    <state width="1878" height="146" key="GridCell.Tab.2.left" timestamp="1618057228087">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1878" height="146" key="GridCell.Tab.2.left/0.0.1920.1040/3840.0.1920.1040@0.0.1920.1040" timestamp="1618057228087" />
-    <state width="1878" height="146" key="GridCell.Tab.2.right" timestamp="1618057228087">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1878" height="146" key="GridCell.Tab.2.right/0.0.1920.1040/3840.0.1920.1040@0.0.1920.1040" timestamp="1618057228087" />
-    <state width="1878" height="146" key="GridCell.Tab.3.bottom" timestamp="1618057228087">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1878" height="146" key="GridCell.Tab.3.bottom/0.0.1920.1040/3840.0.1920.1040@0.0.1920.1040" timestamp="1618057228087" />
-    <state width="1878" height="146" key="GridCell.Tab.3.center" timestamp="1618057228087">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1878" height="146" key="GridCell.Tab.3.center/0.0.1920.1040/3840.0.1920.1040@0.0.1920.1040" timestamp="1618057228087" />
-    <state width="1878" height="146" key="GridCell.Tab.3.left" timestamp="1618057228087">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1878" height="146" key="GridCell.Tab.3.left/0.0.1920.1040/3840.0.1920.1040@0.0.1920.1040" timestamp="1618057228087" />
-    <state width="1878" height="146" key="GridCell.Tab.3.right" timestamp="1618057228087">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1878" height="146" key="GridCell.Tab.3.right/0.0.1920.1040/3840.0.1920.1040@0.0.1920.1040" timestamp="1618057228087" />
-    <state x="782" y="220" key="RiderGenerateDialog" timestamp="1618400057810">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="782" y="220" key="RiderGenerateDialog/0.0.1920.1040/3840.0.1920.1040@0.0.1920.1040" timestamp="1618400057810" />
-    <state x="462" y="164" key="SettingsEditor" timestamp="1618058226310">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="462" y="164" key="SettingsEditor/0.0.1920.1040/3840.0.1920.1040@0.0.1920.1040" timestamp="1618058226310" />
-    <state width="966" height="526" key="XDebugger.FullValuePopup" timestamp="1618046722814">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="966" height="526" key="XDebugger.FullValuePopup/0.0.1920.1040/3840.0.1920.1040@0.0.1920.1040" timestamp="1618046722814" />
-    <state x="623" y="226" width="672" height="678" key="search.everywhere.popup" timestamp="1618399616663">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="226" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/3840.0.1920.1040@0.0.1920.1040" timestamp="1618399616663" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.1.4/Scripts/Runtime/TMPro_UGUI_Private.cs</url>
           <line>1869</line>
-          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.1.4/Scripts/Runtime/TMPro_UGUI_Private.cs" initialLine="1869">
+          <properties documentPath="$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.1.4/Scripts/Runtime/TMPro_UGUI_Private.cs" initialLine="1869" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Dialog.cs</url>
+          <line>110</line>
+          <properties documentPath="E:\UnityPorject\ParallelScript\Assets\Scripts\Dialog.cs" initialLine="110" containingFunctionPresentation="method 'LoadScript'">
             <startOffsets>
-              <option value="84088" />
+              <option value="2969" />
             </startOffsets>
             <endOffsets>
-              <option value="84183" />
+              <option value="3089" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

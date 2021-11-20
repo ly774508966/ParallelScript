@@ -7,23 +7,20 @@ using DG.Tweening;
 using System.IO;
 using System.Linq;
 using System.Text;
+using Cysharp.Threading.Tasks;
 using TMPro;
 
 public class Dialog : MonoSingleton<Dialog>,IPause
 {
-    
-    
-    [SerializeField]private float textAnimateTime = 0.2f;
+    [SerializeField]private float textAnimateTime = 400;
     
     private TMP_Text tmpText;
     private TMPEffect tmpEffect;
     private Text nameBox;
     
-    private string[] buffer;
-    private int currentLine;
-    private bool canNext = true;
+    private Queue<string> textQueue;
     private bool isPause;
-    
+
     private void Awake()
     {
         Instance = this;
@@ -41,42 +38,29 @@ public class Dialog : MonoSingleton<Dialog>,IPause
         LuaEventCenter.Instance.RegisterFunction("load", "LoadScript", this);
 
         LoadScript("Start.txt");
+        LoopListen();
     }
-    
 
-    // Update is called once per frame
-    void Update()
+    async UniTaskVoid LoopListen()
     {
-        if (Input.anyKeyDown&&canNext&&!isPause)
+        while (true)
         {
-            StartCoroutine(PlayText(buffer[currentLine]));
-            currentLine++;
+            await UniTask.WaitUntil(() => Input.anyKeyDown);
+            await PlayText(textQueue.Dequeue());
         }
     }
-
+    
     /// <summary>
     /// 显示文字的协程
     /// </summary>
-    IEnumerator PlayText(string Rawtext)
+    async UniTask PlayText(string rawtext)
     {
-        canNext = false;
-
-
-        #region 文字去Tag
-
-        tmpText.maxVisibleCharacters = 0;
-        tmpText.text = Rawtext;
-        tmpText.ForceMeshUpdate();
-        StringBuilder unTagText = new StringBuilder();
-        for (int i = 0; i < tmpText.textInfo.characterCount; i++)
-        {
-            unTagText.Append(tmpText.textInfo.characterInfo[i].character);
-        }
-        #endregion
-
-        
+        //去掉<></>里的内容
+        var unTagText = ParallelScriptFormater.RemoveTags(rawtext,tmpText);
+        //去掉脚本{}里的内容
         string text = TokenAnalyze.RemoveKeyWords(unTagText.ToString(), out var mark);
-        var renterText = TokenAnalyze.RemoveKeyWords(Rawtext, out var __);
+        //需要显示的内容
+        var renterText = TokenAnalyze.RemoveKeyWords(rawtext, out var __);
         tmpEffect.SetText(renterText);//更新文字信息
         
 
@@ -91,15 +75,12 @@ public class Dialog : MonoSingleton<Dialog>,IPause
                 {
                     if (job.Key == i)
                     {
-                        print($"{job.Key}  {job.Value}");
                         LuaEventCenter.Instance.DoString(job.Value);
-                        
                     }
                 }
-                yield return new WaitForSeconds((float)LuaEventCenter.Instance.GetNumber("w"));
+                await UniTask.Delay((int)LuaEventCenter.Instance.GetNumber("w"));
                 //+1是因为第一个字符应该显示
                 tmpText.maxVisibleCharacters = i+1;
-                
             }
         }
         else
@@ -109,8 +90,8 @@ public class Dialog : MonoSingleton<Dialog>,IPause
                 LuaEventCenter.Instance.DoString(job.Value);
             }
         }
-        canNext = true;
     }
+
     
     /// <summary>
     /// 设置发言人名称
@@ -129,9 +110,8 @@ public class Dialog : MonoSingleton<Dialog>,IPause
     {
         FileStream fileStream = new FileStream(Application.streamingAssetsPath + @"\" + filename,FileMode.Open,FileAccess.Read);
         TextReader textReader = new StreamReader(fileStream);
-        buffer = TokenAnalyze.ClipLine(textReader.ReadToEnd());
-        currentLine = 0;
-        StartCoroutine(PlayText(buffer[currentLine++]));//执行加载好后的语句
+        textQueue = TokenAnalyze.ClipLine(textReader.ReadToEnd());
+        PlayText(textQueue.Dequeue());//执行加载好后的语句
     }
 
     /// <summary>
@@ -150,7 +130,7 @@ public class Dialog : MonoSingleton<Dialog>,IPause
             go.GetComponent<Button>().onClick.AddListener(() =>
             {
                 LuaEventCenter.Instance.DoString($"choise = '{item}'");
-                TokenAnalyze.RemoveKeyWords(buffer[currentLine], out var mark);
+                TokenAnalyze.RemoveKeyWords(textQueue.Peek(), out var mark);
                 LuaEventCenter.Instance.DoString(mark[0].Value);
                 Resume();
                 select.FinishSelect();

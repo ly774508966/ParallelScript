@@ -72,13 +72,6 @@ public class TMPEffect : MonoBehaviour
                 }
             }
         }
-        // foreach (var items in linkDir)
-        // {
-        //     foreach (var item in items.Value)
-        //     {
-        //         print($"{items.Key} {item.GetLinkText()}");
-        //     }
-        // }
     }
 
     public void SetText(string text)
